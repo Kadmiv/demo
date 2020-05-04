@@ -22,12 +22,12 @@ plugins {
 	id 'war'
 }
 
-group = 'com.planarry'
+group = 'com.wialon_auth.demo'
 //version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
-ext.group = 'com.planarry.billing'
-ext.baseName = 'billing'
+ext.group = 'com.wialon_auth.demo'
+ext.baseName = 'demo'
 ext.version = '1.0.4'
 sourceCompatibility = '1.8'
 
@@ -38,12 +38,12 @@ repositories {
 }
 
 bootJar {
-	mainClassName = 'com.planarry.billing.ApplicationKt'
+	mainClassName = 'com.wialon_auth.demo.Application'
 //    sourceSets.main.java.srcDirs = ['src']
 	version = version
 	baseName = baseName
 	manifest {
-		attributes 'Start-Class': 'com.planarry.billing.ApplicationKt'
+		attributes 'Start-Class': 'com.wialon_auth.demo.Application'
 	}
 
 //    requiresUnpack '**/jruby-complete-*.jar'
